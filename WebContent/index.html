@@ -1,0 +1,31 @@
+<html>
+
+<head>
+<title>GenInDoubt</title>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+</head>
+
+<body>
+
+<h2>GenInDoubt</h2>
+
+<hr>
+<table>
+<tr><td>Access  Order:</td><td>DummyRM1 -&gt; RM1 -&gt; DummyRM2 -&gt; RM2 -&gt; DummyRM3</td></tr>
+<tr><td>Prepare Order:</td><td>DummyRM3 -&gt; RM2 -&gt; DummyRM2 -&gt; RM1 -&gt; DummyRM1</td></tr>
+<tr><td>Commit  Order:</td><td>DummyRM1 -&gt; RM1 -&gt; DummyRM2 -&gt; RM2 -&gt; DummyRM3</td></tr>
+</table>
+
+<hr>
+<p><a href="TemplateInput.jsp"  >[Template] RM1=(null), RM2=(null)</a>
+<p><a href="DB1_MQ_Input.jsp"   >[DB-MQ] RM1=DB(1), RM2=MQ</a>
+<p><a href="MQ_DB1_Input.jsp"   >[MQ-DB] RM1=MQ, RM2=DB(1)</a>
+<p><a href="DB1_DB2_Input.jsp"  >[DB-DB] RM1=DB(1), RM2=DB(2)</a>
+<p><a href="DB2_DB1_Input.jsp"  >[DB-DB] RM1=DB(2), RM2=DB(1)</a>
+<p><a href="DB1_Only_Input.jsp" >[DB] RM1=DB(1), RM2=n/a</a>
+<p><a href="MQ_Only_Input.jsp"  >[MQ] RM1=MQ, RM2=n/a</a>
+
+
+</body>
+
+</html>
